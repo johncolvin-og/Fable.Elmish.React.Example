@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- <PackageReference Include="FSharp.Core" Version="7.0.300-beta.23114.3" /> -->
+    <PackageReference Include="Fable.Core" Version="4.0.0-theta-007" />
+    <PackageReference Include="Fable.React" Version="9.2.0" />
+    <PackageReference Include="Fable.Elmish.React" Version="4.0.0" />
+    <PackageReference Include="Fable.Elmish.Browser" Version="4.0.1" />
+    <PackageReference Include="Fable.Elmish.Debugger" Version="4.0.0" />
+    <PackageReference Include="Fable.Elmish.HMR" Version="7.0.0" />
+    <PackageReference Include="Fable.FontAwesome" Version="3.0.0-beta-001" />
+    <!-- <PackageReference Include="mscorlib" Version="4.0.0.0" /> -->
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Global to the app -->
+    <Compile Include="Global.fs" />
+
+    <!-- Counter -->
+    <Compile Include="Counter/Types.fs" />
+    <Compile Include="Counter/State.fs" />
+    <Compile Include="Counter/View.fs" />
+
+    <!-- Home -->
+    <Compile Include="Home/Types.fs" />
+    <Compile Include="Home/State.fs" />
+    <Compile Include="Home/View.fs" />
+
+    <!-- Info -->
+    <Compile Include="Info/View.fs" />
+
+    <!-- Navbar -->
+    <Compile Include="Navbar/View.fs" />
+
+    <!-- App -->
+    <Compile Include="Types.fs" />
+    <Compile Include="State.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+
+  <!-- <Import Project="..\.paket\Paket.Restore.targets" /> -->
+</Project>
